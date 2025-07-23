@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hub Mercado Livre</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Hub Mercado Livre</h1>
+
+  <div class="section">
+    <label>Client ID:</label>
+    <input type="text" id="clientIdInput" placeholder="Seu Client ID">
+    <label>Redirect URI:</label>
+    <input type="text" id="redirectUriInput" placeholder="Sua Redirect URI">
+    <button onclick="iniciarLogin()">Autorizar com Mercado Livre</button>
+  </div>
+
+  <p id="mensagem">Clique no botão para autorizar no Mercado Livre.</p>
+
+  <div class="section">
+    <h2>Código de autorização:</h2>
+    <input type="text" id="codeInput" placeholder="Cole aqui o código TG" />
+    <pre id="code">Nenhum código</pre>
+    <button onclick="atualizarCodigo()">Atualizar Código</button>
+  </div>
+
+  <div class="section">
+    <h2>Gerar Access Token</h2>
+    <input type="text" id="clientSecretInput" placeholder="Seu Client Secret">
+    <button onclick="gerarToken()">Gerar Access Token com código TG</button>
+    <pre id="tokenGerado">Nenhum token gerado</pre>
+  </div>
+
+  <div class="section">
+    <h2>Seu Access Token:</h2>
+    <input type="text" id="tokenInput" placeholder="Cole seu access_token aqui" />
+    <button onclick="buscarProduto()">Buscar produto</button>
+
+    <h2>Buscar Produto</h2>
+    <input type="text" id="mlbInput" placeholder="Cole o código MLB do produto aqui (ex: MLB5421986517)" />
+  </div>
+
+  <div class="section">
+    <h2>Detalhes do Produto</h2>
+    <pre id="produto">Aguardando token...</pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
