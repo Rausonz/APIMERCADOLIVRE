@@ -1,45 +1,66 @@
+/* Estilo do corpo da página */
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #f5f5f5;
+  font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #e0f7fa, #80deea); /* Gradiente suave */
   color: #333;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-h1 {
-  color: #0077cc;
+/* Estilo dos títulos */
+h1, h2, h3 {
+  color: #00796b; /* Cor vibrante para os títulos */
+  margin: 10px 0;
+  font-weight: 700; /* Negrito */
 }
 
+/* Estilo das seções */
 .section {
   background: white;
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
 }
 
+/* Estilo dos inputs e botões */
 input, button {
   display: block;
   margin: 10px 0;
-  padding: 8px;
+  padding: 12px; /* Aumentando o padding */
   width: 100%;
   box-sizing: border-box;
+  border: 1px solid #b2dfdb; /* Borda suave */
+  border-radius: 8px; /* Bordas arredondadas */
+  transition: border-color 0.3s; /* Transição suave para a borda */
 }
 
+/* Estilo dos botões */
 button {
-  background-color: #0077cc;
+  background-color: #00796b; /* Cor vibrante para o botão */
   color: white;
   border: none;
   cursor: pointer;
-  transition: 0.2s;
+  transition: background-color 0.3s, transform 0.2s; /* Transição suave */
 }
 
+/* Efeito de hover nos botões */
 button:hover {
-  background-color: #005fa3;
+  background-color: #004d40; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
 }
 
+/* Estilo dos inputs ao focar */
+input:focus {
+  border-color: #00796b; /* Mudança de cor ao focar */
+  outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilo para pré-formatados */
 pre {
-  background: #eee;
+  background: #f1f1f1;
   padding: 10px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  border-radius: 8px; /* Bordas arredondadas */
+  overflow: auto; /* Permite rolagem se necessário */
 }
